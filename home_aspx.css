@@ -1,0 +1,107 @@
+:root{
+    --anchor-text-color:rgb(0, 255, 38);
+    --img-border-color:darkred;
+    --border-color:darkred;
+    --img-box-shadow:rgba(0, 0, 0, 0.931);
+    --img-hover-box-shadow:#1e96a9;
+    --nav-color:#DDCEFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px 15px;
+    /* width: 100vw; */
+}
+
+header{
+    position: sticky;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    height: 35px;
+    /* position: sticky; */
+    background: var(--nav-color);
+    text-align: center;
+    border: none;
+    box-shadow:inset -3px -3px 10px 0px rgba(0, 0, 0, 0.931),
+                inset 3px 3px 10px 0px rgba(195, 255, 209, 0.931);
+}
+
+head {
+    display: flex;
+    /* border: 2px solid var(--border-color); */
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 216px;
+    /* left: 35px; */
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    font-weight:bold;
+    font-size: 1rem;
+    cursor: pointer;
+    /* font-family: 'Kanit', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--anchor-text-color);
+    cursor: pointer;
+}
+
+img {
+    /* padding: 5px 5px; */
+    border: 2px solid var(--img-border-color);
+    width: 150px;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px var(--img-box-shadow);
+    margin: 3.5px;
+    transition: .2s ease-in-out;
+    /* overflow: hidden; */
+}
+
+
+/* .blur{
+    backdrop-filter: blur(5px);
+} */
+
+img:hover {
+    box-shadow: 4px 4px 10px var(--img-hover-box-shadow);
+}
+
+.alina_lopez_head {
+    position: relative;
+    display: inline-block;
+}
+
+.flex-dir {
+    display: inline-block;
+    position: relative;
+}
+
+@media only screen and (max-width: 375px) {
+    body{
+        background: #ccffcc;
+    }
+}
+
+/* .blur{
+    filter: blur(1px);
+} */
